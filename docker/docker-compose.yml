@@ -1,0 +1,4 @@
+discovery:
+  image: craig.tubb/discovery
+  ports:
+   - "8761:8761"
