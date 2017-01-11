@@ -8,3 +8,9 @@ gateway:
    - "10000:10000"
   links:
    - discovery
+config:
+  image: craig.tubb/config
+  ports:
+   - "8888:8888"
+  links:
+   - discovery
