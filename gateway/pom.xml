@@ -17,4 +17,11 @@
   <properties>
     <docker.image.prefix>craig.tubb</docker.image.prefix>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter</artifactId>
+    </dependency>
+  </dependencies>
 </project>
