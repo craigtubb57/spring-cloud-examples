@@ -2,3 +2,9 @@ discovery:
   image: craig.tubb/discovery
   ports:
    - "8761:8761"
+gateway:
+  image: craig.tubb/gateway
+  ports:
+   - "10000:10000"
+  links:
+   - discovery
