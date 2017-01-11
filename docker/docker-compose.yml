@@ -2,9 +2,16 @@ discovery:
   image: craig.tubb/discovery
   ports:
    - "8761:8761"
+config:
+  image: craig.tubb/config
+  ports:
+   - "8888:8888"
+  links:
+   - discovery
 gateway:
   image: craig.tubb/gateway
   ports:
    - "10000:10000"
   links:
    - discovery
+   - config
