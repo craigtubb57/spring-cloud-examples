@@ -15,3 +15,8 @@ gateway:
   links:
    - discovery
    - config
+users:
+  image: craig.tubb/users
+  links:
+   - discovery
+   - config
