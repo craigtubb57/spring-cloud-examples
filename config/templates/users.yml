@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: cloud
+---
+spring:
+  profiles: cloud
+  jpa:
+    show_sql: false
+    database: MYSQL
+    hibernate:
+      ddl-auto: none
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery.cfapps.io/eureka/
+  instance:
+    hostname: users.cfapps.io
+    nonSecurePort: 80
+ribbon:
+  eureka:
+    enabled: true
+---
+spring:
+  profiles: development
+  jpa:
+    show_sql: false
+    hibernate:
+      ddl-auto: update
+server:
+  port: 9006
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery.cfapps.io/eureka/
+  instance:
+    preferIpAddress: true
+ribbon:
+  eureka:
+    enabled: false
