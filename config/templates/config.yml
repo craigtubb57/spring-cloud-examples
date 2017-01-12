@@ -35,7 +35,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-kb.cfapps.io/eureka/
+      defaultZone: http://discovery.cfapps.io/eureka/
 
 ---
 
