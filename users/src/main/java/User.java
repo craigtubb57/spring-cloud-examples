@@ -4,7 +4,7 @@ public class User {
 
 	private String firstName;
 	private String lastName;
-	private String email;
+	private String emailAddress;
 
   public Long getId() {
 		return id;
@@ -26,11 +26,11 @@ public class User {
 		this.lastName = lastName;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getEmailAddress() {
+		return emailAddress;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmailAddress(String emailAddress) {
+		this.emailAddress = emailAddress;
 	}
 }
