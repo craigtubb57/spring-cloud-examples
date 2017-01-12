@@ -1,6 +1,3 @@
-package data;
-
-import data.domain.nodes.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -14,9 +11,7 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 @EnableZuulProxy
 public class Application {
 
-    public Application() {
-        setBasePackage("java");
-    }
+    public Application() {}
 
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
