@@ -12,6 +12,7 @@
         <module>discovery</module>
         <module>gateway</module>
         <module>config</module>
+        <module>users</module>
     </modules>
 
     <parent>
